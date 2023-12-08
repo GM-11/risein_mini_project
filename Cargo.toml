@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/risein_mini_project_backend",
+]

@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "risein_mini_project_backend": {
+      "candid": "src/risein_mini_project_backend/risein_mini_project_backend.did",
+      "package": "risein_mini_project_backend",
+      "type": "rust"
+    },
+    "risein_mini_project_frontend": {
+      "dependencies": [
+        "risein_mini_project_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/risein_mini_project_frontend/src/index.html"
+      },
+      "source": [
+        "src/risein_mini_project_frontend/assets",
+        "dist/risein_mini_project_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
